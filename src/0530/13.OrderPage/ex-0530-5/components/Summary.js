@@ -11,11 +11,11 @@ function Summary(props) {
         </div>
         <hr />
         <div className="row">
-          <div className="col col-style">共 3 項目</div>
+          <div className="col col-style">共 {props.counter.a} 項目</div>
         </div>
         <div className="row row-style">
           <div className="col">總價</div>
-          <div className="col text-right">$137.00</div>
+          <div className="col text-right">${props.counter.a * 300}</div>
         </div>
         <button className="btn">前往付款</button>
       </div>

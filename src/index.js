@@ -12,7 +12,7 @@ import './index.css';
 // import Jsx6 from './0526/8.jsx-三元與inline-if/App';
 // import Jsx7 from './0526/9.jsx-map-table練習/App';
 
-import SetState from './0530/1.setState異步處理樣式-1/App';
+// import SetState from './0530/1.setState異步處理樣式-1/App';
 // import ChangeCss from './0530/2.練習題-homwork1/App';
 // import Props1 from './0530/3.props-基本範例-P到C/App';
 // import Props2 from './0530/4.props-解構props-1/App';
@@ -25,7 +25,7 @@ import SetState from './0530/1.setState異步處理樣式-1/App';
 // import Props8 from './0530/10.props-資料流-C到P-一呈現即回傳/App';
 // import Props9 from './0530/11.props-資料流-C到C/App';
 // import HomeWork3 from './0530/12.練習題/HomeWork3';
-//import OrderPage from './0530/13.OrderPage/App';
+import OrderPage from './0530/13.OrderPage/App';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -42,7 +42,7 @@ root.render(
     {/* <Jsx6 /> */}
     {/* <Jsx7 /> */}
 
-    <SetState />
+    {/* <SetState /> */}
     {/* <ChangeCss /> */}
     {/* <Props1 /> */}
     {/* <Props2 /> */}
@@ -54,7 +54,7 @@ root.render(
     {/* <Props8 /> */}
     {/* <Props9 /> */}
     {/* <HomeWork3 /> */}
-    {/* <OrderPage /> */}
+    <OrderPage />
   </React.StrictMode>
 );
 
