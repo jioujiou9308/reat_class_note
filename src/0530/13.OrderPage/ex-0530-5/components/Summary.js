@@ -1,6 +1,12 @@
 import React from 'react';
 
-function Summary(props) {
+function Summary({ counter: { a, b } }) {
+  //第三種寫法
+  // const counter = props.counter.a;
+  // const counterB = props.counter.b;
+
+  // const { a, b } = counter; 解構成這樣
+
   return (
     <>
       <div className="col-md-4 summary">
@@ -11,11 +17,11 @@ function Summary(props) {
         </div>
         <hr />
         <div className="row">
-          <div className="col col-style">共 {props.counter.a} 項目</div>
+          <div className="col col-style">共 {a + b} 項目</div>
         </div>
         <div className="row row-style">
           <div className="col">總價</div>
-          <div className="col text-right">${props.counter.a * 300}</div>
+          <div className="col text-right">${a * 300 + b * 300}</div>
         </div>
         <button className="btn">前往付款</button>
       </div>

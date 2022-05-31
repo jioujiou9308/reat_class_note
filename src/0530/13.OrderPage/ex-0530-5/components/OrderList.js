@@ -1,11 +1,18 @@
 import React from 'react';
 
 function OrderList(props) {
-  const { counterKey, setCounterKey } = props;
+  // const counter = props.counter.a;
+  // const counterB = props.counter.b;
+  const { a } = props.counter;
+  const { b } = props.counter;
+
+  const setCounter = props.setCounter;
+  // const { counterKey, setCounterKey } = props;
   // console.log(counter);
   // let con = {item:1};
   // con = con.item+1
   // con = {item:con.item+1}
+
   return (
     <>
       <div className="col-md-8 cart">
@@ -17,7 +24,7 @@ function OrderList(props) {
               </h4>
             </div>
             <div className="col align-self-center text-right text-muted">
-              3種商品項目
+              3種商品項目 cpunter:{a}
             </div>
           </div>
         </div>
@@ -38,22 +45,21 @@ function OrderList(props) {
               <a
                 href="#/"
                 onClick={() => {
-                  if (counterKey.a < 1) return;
-                  const { a } = counterKey;
-                  setCounterKey({ ...counterKey, a: a - 1 });
+                  if (a > 0) {
+                    setCounter({ a: a - 1, b });
+                  }
                 }}
               >
                 -
               </a>
               <a href="#/" className="border">
-                {counterKey.a}
+                {a}
               </a>
               <a
                 href="#/"
                 onClick={() => {
-                  const { a } = counterKey;
-                  setCounterKey({ ...counterKey, a: a + 1 });
-                  //{ item: counter.item + 1 }
+                  setCounter({ a: a + 1, b });
+                  //整個物件裡面全部改變
                 }}
               >
                 +
@@ -81,20 +87,21 @@ function OrderList(props) {
               <a
                 href="#/"
                 onClick={() => {
-                  if (counterKey < 1) return;
-                  setCounterKey({ a: counterKey.a, b: counterKey.b - 1 });
+                  if (b > 0) {
+                    setCounter({ a, b: b - 1 });
+                  }
                 }}
               >
                 -
               </a>
               <a href="#/" className="border">
-                {counterKey.b}
+                {b}
               </a>
               <a
                 href="#/"
                 onClick={() => {
-                  setCounterKey({ a: counterKey.a, b: counterKey.b + 1 });
-                  //{ item: counter.item + 1 }
+                  setCounter({ a, b: b + 1 });
+                  //整個物件裡面全部改變
                 }}
               >
                 +
