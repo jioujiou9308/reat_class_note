@@ -29,7 +29,8 @@ import './index.css';
 // import OrderPage2 from './0601/1.實作單一產品功能/src/App';
 // import OrderPage3 from './0601/2.實作多個產品-狀態為陣列/src/App';
 // import OrderPage4 from './0601/3.實作多個產品-狀態為陣列中物件/src/App';
-import Controlled from './0601-2/App';
+// import Controlled from './0601-2/App';
+import MultipleInput from './0601-3/App';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -62,7 +63,8 @@ root.render(
     {/* <OrderPage2 /> */}
     {/* <OrderPage3 /> */}
     {/* <OrderPage4 /> */}
-    <Controlled />
+    {/* <Controlled /> */}
+    <MultipleInput />
   </React.StrictMode>
 );
 
