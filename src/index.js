@@ -25,7 +25,11 @@ import './index.css';
 // import Props8 from './0530/10.props-資料流-C到P-一呈現即回傳/App';
 // import Props9 from './0530/11.props-資料流-C到C/App';
 // import HomeWork3 from './0530/12.練習題/HomeWork3';
-import OrderPage from './0530/13.OrderPage/App';
+// import OrderPage from './0530/13.OrderPage/App';
+// import OrderPage2 from './0601/1.實作單一產品功能/src/App';
+// import OrderPage3 from './0601/2.實作多個產品-狀態為陣列/src/App';
+// import OrderPage4 from './0601/3.實作多個產品-狀態為陣列中物件/src/App';
+import Controlled from './0601-2/App';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -54,7 +58,11 @@ root.render(
     {/* <Props8 /> */}
     {/* <Props9 /> */}
     {/* <HomeWork3 /> */}
-    <OrderPage />
+    {/* <OrderPage /> */}
+    {/* <OrderPage2 /> */}
+    {/* <OrderPage3 /> */}
+    {/* <OrderPage4 /> */}
+    <Controlled />
   </React.StrictMode>
 );
 

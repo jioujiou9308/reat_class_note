@@ -5,10 +5,12 @@ import { useState } from 'react';
 
 function OrderPage() {
   const [counter, setCounter] = useState({ a: 0, b: 0 });
+  const item = { inner: 'item' };
   return (
     <div className="card">
       <div className="row">
-        <OrderList counterKey={counter} setCounterKey={setCounter} />
+        {/* <OrderList counter={counter} setCounter={setCounter} /> */}
+        <OrderList {...{ setCounter, counter }} />
         <Summary counter={counter} />
       </div>
     </div>
