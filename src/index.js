@@ -30,9 +30,11 @@ import './index.css';
 // import OrderPage3 from './0601/2.實作多個產品-狀態為陣列/src/App';
 // import OrderPage4 from './0601/3.實作多個產品-狀態為陣列中物件/src/App';
 // import Controlled from './0601-2/App';
-import MultipleInput from './0601-3/App';
-
-import reportWebVitals from './reportWebVitals';
+// import MultipleInput from './0601-3/App';
+// import Ex0607 from './ex-0607-1/App';
+// import Ex06072 from './ex-0607-2/App';
+// import CCLFCL from './ex-0607-3/App';
+import UserList from './ex-0607-4/UserList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -64,11 +66,10 @@ root.render(
     {/* <OrderPage3 /> */}
     {/* <OrderPage4 /> */}
     {/* <Controlled /> */}
-    <MultipleInput />
+    {/* <MultipleInput /> */}
+    {/* <Ex0607 /> */}
+    {/* <Ex06072 /> */}
+    {/* <CCLFCL /> */}
+    <UserList />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
