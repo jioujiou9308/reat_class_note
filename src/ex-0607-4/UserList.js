@@ -21,7 +21,11 @@ const UserList = () => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-  }, []);
+  }, [isLoading]);
+
+  // useEffect(()=>{
+
+  // },[isLoading,isConnecting])
 
   const spinner = (
     <>
