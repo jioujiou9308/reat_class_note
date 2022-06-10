@@ -22,11 +22,11 @@ const products = [
 
 const initState = (productArray) => {
   const state = [];
-
   for (let i = 0; i < productArray.length; i++) {
     state.push(1);
   }
 
+  console.log(state, productArray);
   return state;
 };
 
@@ -42,10 +42,9 @@ function OrderPage() {
     }
     return result;
   };
-
+  // ---------------------------------------------
   const totalPrice = () => {
     let result = 0;
-
     for (let i = 0; i < counts.length; i++) {
       result = counts[i] * products[i].price;
     }

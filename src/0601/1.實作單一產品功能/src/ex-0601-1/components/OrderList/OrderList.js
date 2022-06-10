@@ -15,7 +15,7 @@ function OrderList(props) {
               </h4>
             </div>
             <div className="col align-self-center text-right text-muted">
-              3種商品項目
+              2種商品項目
             </div>
           </div>
         </div>
@@ -25,11 +25,12 @@ function OrderList(props) {
           return (
             <ProductItem
               key={id}
-              id={id}
-              name={name}
-              categroy={categroy}
-              price={price}
-              image={image}
+              {...{ id, name, categroy, price, image }}
+              // id={id}
+              // name={name}
+              // categroy={categroy}
+              // price={price}
+              // image={image}
               count={counts[i]}
               // 原本setCounts裡面是一個陣列
               // 因為有多個商品所以要把它變成單個setcount
