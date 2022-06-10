@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const MultipleInput = () => {
      const [userData, setUserData] = useState({
           fullName: '',
           phone: '',
+          avatar:'blank.jpg'
      });
+     // const fetchUserDataFromSever=()=>{
+     //      setUserData({
+     //           fullName:'amy', 
+     //           phone:'0988982738',
+     //           avatar:'logo192.png'
+     //      })
+     // }
+     
+
+     // useEffect(()=>{
+     //      fetchUserDataFromSever()
+     // },[])
      //這是表單元素裡的固定寫法(handleChange)
      const handleChange = (e) => {
           //為啥要看這三個東西呢
@@ -26,6 +39,7 @@ const MultipleInput = () => {
                <div>
                     {/* 表單元素最好都要有name */}
                     <label>姓名</label>
+                    <img src={userData.avatar} alt='/'/>
                     <input
                          type="text"
                          name="fullName"

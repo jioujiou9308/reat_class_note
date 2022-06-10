@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import './index.css';
 
 // import JsCounter from './0526/1.js-計數器/index';
@@ -30,7 +31,10 @@ import './index.css';
 // import OrderPage3 from './0601/2.實作多個產品-狀態為陣列/src/App';
 // import OrderPage4 from './0601/3.實作多個產品-狀態為陣列中物件/src/App';
 // import Controlled from './0601-2/App';
-import MultipleInput from './0601-3/App';
+// import MultipleInput from './0601-3/App';
+// import Homework441 from './ex-0606-1/App';
+// import Homework441 from './ex-0606-1/App';
+import HTML5Form from './ex-0606-3/App'
 
 import reportWebVitals from './reportWebVitals';
 
@@ -64,7 +68,10 @@ root.render(
     {/* <OrderPage3 /> */}
     {/* <OrderPage4 /> */}
     {/* <Controlled /> */}
-    <MultipleInput />
+    {/* <MultipleInput /> */}
+    {/* <Homework4/> */}
+    {/* <Homework441/> */}
+    <HTML5Form/>
   </React.StrictMode>
 );
 
