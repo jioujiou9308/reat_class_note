@@ -21,11 +21,11 @@ import './index.css';
 // import Props4 from './0530/6.props-預設props/App';
 // import Props5 from './0530/7.props-props類型檢查/App';
 // import Props6 from './0530/8.props-資料流-P到C/App';
-// import Props7 from './0530/8.props-資料流-P到C/App';
+
 // import Props7 from './0530/9.props-資料流-C到P/App';
 // import Props8 from './0530/10.props-資料流-C到P-一呈現即回傳/App';
 // import Props9 from './0530/11.props-資料流-C到C/App';
-// import HomeWork3 from './0530/12.練習題/HomeWork3';
+import HomeWork3 from './0530/12.練習題/HomeWork3';
 // import OrderPage from './0530/13.OrderPage/App';
 // import OrderPage2 from './0601/1.實作單一產品功能/src/App';
 // import OrderPage3 from './0601/2.實作多個產品-狀態為陣列/src/App';
@@ -40,7 +40,7 @@ import './index.css';
 // import Ex06072 from './ex-0607-2/App';
 // import CCLFCL from './ex-0607-3/App';
 // import UserList from './ex-0607-4/UserList';
-import UserList from './ex-0609-1-useffect/App';
+// import UserList from './ex-0609-1-useffect/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -66,7 +66,7 @@ root.render(
     {/* <Props7 /> */}
     {/* <Props8 /> */}
     {/* <Props9 /> */}
-    {/* <HomeWork3 /> */}
+    <HomeWork3 />
     {/* <OrderPage /> */}
     {/* <OrderPage2 /> */}
     {/* <OrderPage3 /> */}
@@ -79,6 +79,6 @@ root.render(
     {/* <Ex0607 /> */}
     {/* <Ex06072 /> */}
     {/* <CCLFCL /> */}
-    <UserList />
+    {/* <UserList /> */}
   </React.StrictMode>
 );

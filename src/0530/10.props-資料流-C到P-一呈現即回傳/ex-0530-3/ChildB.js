@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 function ChildB(props) {
-  const [childBData, setChildBData] = useState('child B data')
+  const [childBData, setChildBData] = useState('child B data');
 
   // ChildB一旦呈現在真實DOM中就執行callback
   useEffect(() => {
-    props.setDataFromChildB(childBData)
-  }, [])
+    props.setDataFromChildB(childBData);
+  }, []);
 
   return (
     <>
@@ -20,7 +20,7 @@ function ChildB(props) {
         送資料給Parent
       </button> */}
     </>
-  )
+  );
 }
 
-export default ChildB
+export default ChildB;

@@ -20,7 +20,7 @@ function App() {
                 setSelectedItem(v);
               }}
             >
-              <a href="#/" className={v === selectedItem ? 'active' : ''}>
+              <a href="/" className={v === selectedItem ? 'active' : ''}>
                 {v}
               </a>
             </li>

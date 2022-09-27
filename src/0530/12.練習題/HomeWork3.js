@@ -138,8 +138,10 @@ function Homework3() {
             // 1. 從目前的狀態拷貝出一個新的變數值(陣列/物件)
             // 注意要深拷貝(deep clone)
             const newData = data.map((v) => {
-              return { ...v };
+              return v;
             });
+            console.log(newData);
+
             // 另一種方式
             //const newData = JSON.parse(JSON.stringify(data))
 

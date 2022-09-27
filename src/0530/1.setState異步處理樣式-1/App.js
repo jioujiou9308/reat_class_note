@@ -7,7 +7,7 @@ function App() {
       <h1>{total}</h1>
       <button
         onClick={() => {
-          setTotal(total + 1);
+          setTotal(prev + 1);
         }}
       >
         點擊+1
